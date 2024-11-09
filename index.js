@@ -19,7 +19,6 @@ const upload = multer({ dest: 'uploads/' });
 
 // Define the resolutions for transcoding
 const resolutions = [
-
   { width: 426, height: 240, name: '240p' },
   { width: 640, height: 360, name: '360p' },
   { width: 1280, height: 720, name: '720p' },
