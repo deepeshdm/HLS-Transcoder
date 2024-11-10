@@ -199,6 +199,3 @@ app.post('/upload-adaptive', upload.single('video'), async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at ${HOST}:${PORT}`);
 });
-
-// Export the Express API (required for vercel deployment)
-module.exports = app;
