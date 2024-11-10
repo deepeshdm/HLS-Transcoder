@@ -22,7 +22,9 @@ const resolutions = [
   { width: 426, height: 240, name: '240p' },
   { width: 640, height: 360, name: '360p' },
   { width: 1280, height: 720, name: '720p' },
-  { width: 1920, height: 1080, name: '1080p' }
+  { width: 1920, height: 1080, name: '1080p' },
+  { width: 2560, height: 1440, name: '1440p' }, // Added 1440p resolution
+  { width: 3840, height: 2160, name: '4K' },    // Added 4K resolution
 ];
 
 // Serve the output directory (to serve .m3u8 and .ts files)
