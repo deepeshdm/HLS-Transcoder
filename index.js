@@ -1,3 +1,10 @@
+
+
+const HOST = 'http://localhost' // host url (will be added to hls segment paths)
+const PORT = 3000;
+const FFMPEG_PATH = '/opt/homebrew/bin/ffmpeg';  // Locally installed ffmpeg application path
+
+
 const express = require('express');
 const multer = require('multer');
 const ffmpeg = require('fluent-ffmpeg');
@@ -6,12 +13,6 @@ const fs = require('fs');
 const cors = require('cors');
 const app = express();
 app.use(cors()); 
-
-const HOST = 'http://localhost' // host url (will be added to hls segment paths)
-const PORT = 3000;
-
-// Locally installed ffmpeg application path (macOs)
-const FFMPEG_PATH = '/opt/homebrew/bin/ffmpeg';
 ffmpeg.setFfmpegPath(FFMPEG_PATH);
 
 // Set up multer for file uploads. Save uploaded files to 'uploads' folder
