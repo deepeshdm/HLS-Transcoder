@@ -28,6 +28,10 @@ const resolutions = [
   { width: 3840, height: 2160, name: '4K' },    // Added 4K resolution
 ];
 
+app.get('/', (req, res) => {
+  return res.send('Hello World')
+})
+
 // Serve the output directory (to serve .m3u8 and .ts files)
 app.use('/output', express.static(path.join(__dirname, 'output')));
 
@@ -195,3 +199,6 @@ app.post('/upload-adaptive', upload.single('video'), async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at ${HOST}:${PORT}`);
 });
+
+// Export the Express API (required for vercel deployment)
+module.exports = app;
