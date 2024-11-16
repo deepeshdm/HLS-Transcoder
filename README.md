@@ -35,4 +35,10 @@ const PORT = 3000;
 const FFMPEG_PATH = '/opt/homebrew/bin/ffmpeg';  // Locally installed ffmpeg application path
 ```
 
-5. Setup Frontend (OPTIONAL) - https://github.com/deepeshdm/StreamPlus.git
+5. Run the backend server
+```javascipt
+node index.js
+```
+
+
+6. Setup Frontend (OPTIONAL) - https://github.com/deepeshdm/StreamPlus.git
